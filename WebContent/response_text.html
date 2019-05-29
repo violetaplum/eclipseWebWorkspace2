@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+	<style>
+		*{margin:0;padding:0;
+			font-size: 100%;
+			background:#375AC7FF;}
+		p
+		{
+			font-size: 5vmin;
+			color:#C13DA6FF;
+		}
+	</style>
+</head>
+<body>
+<p>vw단위!</p>
+<!-- 
+
+
+	가변폰트 정하기 : 
+말하자면  real 가변 font에는 vw(viewport width),vh(viewport height)
+		vmin, vmax 가 있다는 전설~~
+		가변폰트 계산법은 
+		5vw일 경우
+		5x브라우저 가로너비(현재960이었다면)/100 ==>  960*5/100=48px
+		5vh
+		5x브라우저 높이/100  ==>  1000*5/100=50px
+		vmin은 브라우저 w h 중 작은쪽을 100을 기준으로 크기 정하는것 
+		즉, h<w인경우 5vmin=h*5% w<h인경우 1vmin=w*1%
+
+		vmax는 브라우저 w h중 큰쪽을 100을 기준으로~~  
+		즉, w<h인경우 5vmin=h*5% w>h인경우 1vmin=w*1%
+		결국 vw로 할지 vh로 할지 정해지지 않고 가로세로폭을 기준으로 가변하게 정하는것.
+	-->
+</body>
+</html>
