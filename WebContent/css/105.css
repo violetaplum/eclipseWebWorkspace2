@@ -1,0 +1,14 @@
+*{margin:0;padding:0;}
+div{margin:20px; padding:20px; border:20px solid pink; width:300px;}
+.naeyong1
+{
+	box-sizing: content-box; /* 마진까지 포함해서 커진다 */
+	background-color: yellow;
+}
+.naeyong2
+{
+	box-sizing: border-box; /* 마진을 제외해서 크기변화가 없다 */
+	background-color: cyan;
+}
+
+/* box-sizing : content-box , border-box */

@@ -1,0 +1,20 @@
+*{
+	margin:0;
+	padding:0;
+}
+div,p
+{
+	background-color: #c8ffc8;
+}
+span
+{
+	background-color: #ffff9d;
+}
+a
+{
+	background-color: #ff8080;
+}
+/* 
+div,p : inline처리됨
+span,a : inline처리 안됨 
+*/

@@ -1,0 +1,28 @@
+*{margin:0;padding:0;}
+.bottari{/*font-size: 0;max-width: 800px;margin:0 auto;*/} 
+/*상하 죄우방향 (0 auto 0 auto) : 화면이 늘어나다가 max-width에 의해
+더이상 너비가 넓어지지 않는다
+*/
+/* section사이 엔터도 빈 한칸글자로 간주하므로 빈칸글자 크기를 0으로 */
+/* 만약 bottari의 font-size를 0으로 지정하지 않으면 두개의 박스는 아래로 내려오게 된다 */
+.na{/* display: inline-block; */
+	padding:10%;
+	/* font-size: 20px; */}
+
+.naeyong1{background-color: black;
+	color:yellow;
+	width:30%;
+	/* vertical-align: top; */ /* 수직정렬 */
+	float:left;
+	}
+
+
+/* 너비30% + 패딩10%+10%=50% */
+
+.naeyong2{background-color: green;
+	width:25%; 
+	float:right;
+	margin-left:5%;}
+	/* margin-left,float,width를 이용하여 서로의 간격을 띄운다 */
+/* 너비30% + 패딩10%+10%=50% */
+/* float를 left,right으로 주면 양쪽으로 떨어지고 가운데에 거리를 줄 수 있음 */

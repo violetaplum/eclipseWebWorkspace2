@@ -1,0 +1,48 @@
+*{margin:0;padding:0;}
+.naeyong1
+{
+	color:yellow;
+	background-color: black;
+	padding:5px;
+}
+.naeyong2
+{
+	background-color: green;
+	padding:5px;
+}
+footer
+{
+	background-color: pink;
+}
+
+
+@media all and (min-width:800px)   /*@media query : 최소너비500px이면(넘어서면) 적용되게끔 만든 쿼리*/
+{
+	*{margin:0;padding:0;}
+	.bottari
+	{
+		font-size: 0;
+	}
+	.na
+	{
+		display: inline-block;
+		padding:10%;
+		font-size: 20px;
+
+	}
+	.naeyong1
+	{
+		width: 30%;background-color: black;vertical-align: top;color:yellow;float:left;
+		
+	}
+	.naeyong2
+	{
+		width: 30%;background-color: green;color:red;float:right;
+		
+	}
+	footer
+	{
+		vertical-align: bottom;
+		background-color: violet;
+	}
+}

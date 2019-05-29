@@ -1,0 +1,32 @@
+*{
+	margin:0;
+	padding:0;
+}
+.div1
+{
+	display: block; /* block : 가로,세로높이를 쓸 수 있다. */
+	width:300px;
+	height:150px;
+	background-color: #6666FF;
+}
+.div2
+{
+	display: none;  /* 안보임 */
+	width:300px;
+	height:150px;
+	background-color: pink;
+}
+span
+{
+	display: inline;  /* w,h사용안됨 */
+	background-color: yellow;
+}
+a
+{
+	display: inline-block; /* inline이면서 block이니까 w,h사용됨 */
+	width:300px;
+	height:150px;
+	background-color:pink; 
+}
+
+/* display:inline, inline-block,none,block    ---->   block이 붙으면 무조건 w,h 사용 가능하다  */

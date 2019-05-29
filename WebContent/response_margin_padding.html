@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+<title>Insert title here</title>
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+}
+#wrap{
+width:90%;/*임의로 90%잡고  300 600 전체는 960px*/
+height:500px;
+margin:0 auto;
+border:4px solid #000;
+
+
+
+}
+.container{
+width:93.75%;/* (900px/960px)*100 */
+height:492px;
+margin:0 auto;
+border:4px solid #000;
+
+
+
+
+
+}
+.container div{
+display:inline-block;
+height:100%;
+
+
+}
+.container div:first-child{
+width:33.3333333333%;
+background:#f9f616;
+
+}
+.container div:nth-child(2){
+  /* nth-child() : 부모가 봤을때 몇번째 자식인가?   */
+  /* 3*n+1 번째로 정해도 된다 */
+/*.container div:first-child + div{  */
+width:66.6666666667%;
+background:#390af6;
+
+}
+</style>
+<!-- Fluid Grid:가변그리드, =fluid layout,flexible layout,flexible grid
+  1) pixel보다는 퍼센트(%)사용. why? more flexible
+  2) (가변으로 만들 box 폭 / 감싼 box 폭)*100(*100은 퍼센트로 만들기 위한)
+ -->
+</head>
+<body>
+  <div id="wrap">
+    <div class="container">
+      <div></div><div></div>
+    </div>
+  </div>
+
+</body>
+</html>

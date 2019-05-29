@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport"
+	content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<!-- viewport : 화면조절기술 -->
+	<!-- divice-width : 웹페이지의 width등을 기기의 width로 적용
+	initial-scale : 페이지로드시 zoom 정도로 초기배율은 1(기본)
+	만일 1보다 작으면 축소된 페이지, 1보다 크면 확대된 페이지
+	minimum-scale=1,maximum-scale=1: viewport의 최소(0.25) 축소배율 및 최대(1,6) 확대배율
+	user-scaleable=no : user의 view=port축소 및 확대여부(yes기본)
+	minimum-scale=1,maximum-scale=1이면 사용 안함
+-->
+
+
+
+	<title>Document</title>
+	<style>
+	@media all and (min-width:320px)
+	{
+	body
+	{
+		background:#dd3737;
+	}
+}
+@media all and (min-width:760px)
+{
+body
+{
+	background:#ff00ff;
+}
+}
+@media all and (min-width:960px)
+{
+body{
+	background:#FF8C00;
+}
+}
+	</style>
+</head>
+<body>
+<img src="./krim/fox.jpeg" width="40%" height="40%">
+</body>
+</html>
