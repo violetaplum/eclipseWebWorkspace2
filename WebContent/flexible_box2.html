@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+  <style>
+
+  	*{margin:0;padding:0;}
+  	#wrap
+  	{
+  		width:95%;
+  		display:flex; 
+  		/* display;inline-block 과 비슷하므로  */
+  	/*	flex-direction:row;  row이므로 꼬치막대가 가로로 놓여있고 flex item은 좌->우 로
+  		기본값이 row이므로 사실 안써도 row   */
+  		flex-direction: row;
+		border:2px solid #ECEA12FF;
+  	}
+
+  	#wrap div
+  	{	
+		margin:0 auto;
+		width:33.3333%;
+  		height:300px;
+  	}
+
+  	#wrap div:nth-child(1)
+  	{
+  		
+		background: #E65318FF;
+  	}
+
+  	#wrap div:nth-child(2)
+  	{
+  		
+  		background: black;	
+  	}
+
+  	#wrap div:nth-child(3)
+  	{
+  		
+  		background: #2263DCFF;
+  	}
+
+  </style>
+</head>
+<body>
+<div id="wrap">
+	<div></div><div></div><div></div>
+</div>
+<!-- 
+flex-direction
+row : flex-item들이 좌->우 배치됨 (주축막대)(main axis)
+교차축(cross axis)
+
+row-reverse : 우->좌 
+
+
+column : 상->하 주축막대는 세로 교차축막대는 가로
+column-reverse : 하->상
+ -->
+ </body>
+</html>

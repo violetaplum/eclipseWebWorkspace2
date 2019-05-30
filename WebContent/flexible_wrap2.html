@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+<style>
+	*{margin:0;padding:0;} /* 단지 초기화 할 뿐임.. */
+	#wrap
+  	{
+  		display: flex;
+  		width:90%;
+      height:500px;
+  		flex-flow:row wrap-reverse;
+			/* 한줄에 줄여서 쓰고싶을때 flex-flow:row wrap-reverse  사용하면됨 */
+
+		border:2px solid #ECEA12FF;
+		margin:0 auto;
+
+  	}
+
+  	#wrap div
+  	{
+		width:100%; /* 한 꼬치막대에 하나만 들어가니까 */
+ /*
+ flex-flow = direction + wrap
+(예) flex-flow:row wrap-reverse
+*/
+
+  	}
+
+  	#wrap div:nth-child(1)
+  	{
+
+		background: #E65318FF;
+  	}
+
+  	#wrap div:nth-child(2)
+  	{
+
+  		background: black;
+  	}
+
+  	#wrap div:nth-child(3)
+  	{
+
+  		background: #2263DCFF;
+  	}
+
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div></div><div></div><div></div>
+
+</div>
+
+</body>
+</html>

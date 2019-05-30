@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+<style>
+	*{margin:0;padding:0;} /* 단지 초기화 할 뿐임.. */
+	#wrap
+  	{
+  		display: flex;
+  		width:90%;
+  		height:500px;
+  		flex-direction:row; /* 한줄막대 */
+  		flex-wrap:wrap; /* 여러 꼬치막대 */
+  		/* display;inline-block 과 비슷하므로  */
+  	/*	  row이므로 꼬치막대가 가로로 놓여있고 flex item은 좌->우 로
+  		기본값이 row이므로 사실 안써도 row   */
+		border:2px solid #ECEA12FF;
+		margin:0 auto;
+
+  	}
+
+  	#wrap div
+  	{	
+		
+		width:100%; /* 한 꼬치막대에 하나만 들어가니까 */
+  	
+  	}
+
+  	#wrap div:nth-child(1)
+  	{
+  		
+		background: #E65318FF;
+  	}
+
+  	#wrap div:nth-child(2)
+  	{
+  		
+  		background: black;	
+  	}
+
+  	#wrap div:nth-child(3)
+  	{
+  		
+  		background: #2263DCFF;
+  	}
+
+</style>
+
+</head>
+<body>
+<div id="wrap">
+	<div></div><div></div><div></div>
+</div>
+<!-- flex-wrap
+	nowrap : 한줄(기본값)(꼬치막대는 하나)
+	wrap : 여러줄(꼬치막대가 여러개)
+	wrap-reverse : 하->상, 우->좌
+	 -->
+</body>
+</html>

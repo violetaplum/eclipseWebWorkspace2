@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Document 이건 w3c에서</title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+  <style>
+	*{margin:0;padding:0;}
+	/* flexible box : float보다 향상된 기술 화면 크기가 다른경우도 레이아웃이 일관성 있게 배치된다 */
+	/* container :  바깥상자  = flex box = parent*/
+	/* flexible item : container안에 있는 item들  = flex item = child
+		old version browser 를 위해 사용하는 prefix(vendor prefix, browser prefix)
+		IE : display: -ms-
+		chrome, safari... : display:-webkt-;
+		Firefox : display:-moz- ;
+		Opera : display:-o-;
+		3WC 표준 : display;
+		예) display : -webkit-flex;
+			display : -moz-flex;
+			display : flex; --> flex는 block으로 처리(박스를 수직으로 쌓는다)
+						            	inline-flex는 수평으로
+			개발자들은 old browser인지 아닌지 따져서 개발해야 한다
+	*/
+*{margin:0;padding:0;}
+#wrap1{
+	display:-webkit-flex; /*웹키트 전용 접두사, 구형 chrome   block 단위이므로 수직으로 쌓임*/
+	display:flex;
+	width:90%;
+	height:500px;
+	margin: 0 auto;
+	background:#94e217;
+	border:3px solid #13e4fc;
+}
+#wrap2{
+	display:-webkit-flex;
+	display:-moz-flex;
+	display:-ms-flex;
+	display:flex;
+	width:90%;
+	height:500px;
+	margin: 0 auto;
+	background:#e217bb;
+	border:3px solid #db2e00;
+}
+  </style>
+
+</head>
+<body>
+<div id="wrap1"></div>
+<div id="wrap2"></div>
+</body>
+</html>

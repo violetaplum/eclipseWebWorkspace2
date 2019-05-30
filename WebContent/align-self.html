@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+<style>
+	*{margin:0;padding:0;}
+	#wrap
+  	{
+  		display: flex;
+  		width:90%;
+			height:500px;
+      margin:0 auto;
+		  border:3px solid #005d80FF;
+			background: #dbee2c;
+    }
+
+  	#wrap div
+  	{
+      width:33.33%;
+		  height:200px;
+  	}
+
+  	#wrap div:nth-child(1)
+  	{
+    align-self: flex-end;
+		background: #E65318FF;
+  	}
+
+  	#wrap div:nth-child(2)
+  	{
+      align-self: center;
+  		background: black;
+  	}
+
+  	#wrap div:nth-child(3)
+  	{
+  		background: #2263DCFF;
+  	}
+
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div></div><div></div><div></div>
+</div>
+<!--
+align-self : auto , stretch , flex-start , flex-end , center , baseline(글자가 나오면 글자라인에 맞춰서 자식이 배치됨)
+  auto(부모의 align item속성을 상속함)
+  baseline(글자가 나오면 글자라인에 맞춰서 자식이 배치됨)
+  (align-self = 자신만 align을 적용하겠다. 사용시에도 개별적으로 각각 코딩해야함)
+-->
+</body>
+</html>

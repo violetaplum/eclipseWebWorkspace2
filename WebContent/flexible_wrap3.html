@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+<style>
+	*{margin:0;padding:0;} /* 단지 초기화 할 뿐임.. */
+	#wrap
+  	{
+  		display: flex;
+  		width:90%;
+      height:300px;
+		  border:3px solid #005d80FF;
+		  margin:10% auto;
+      justify-content: center;
+      /* 좌우가운데 */
+      /* justify-content : flex-start,flex-end,center,space-between,space-around; */
+  	}
+
+  	#wrap div
+  	{
+      width:180px;
+	 /* 한 꼬치막대에 하나만 들어가니까 */
+ /*
+ flex-flow = direction + wrap
+(예) flex-flow:row wrap-reverse
+*/
+
+  	}
+
+  	#wrap div:nth-child(1)
+  	{
+
+		background: #E65318FF;
+  	}
+
+  	#wrap div:nth-child(2)
+  	{
+
+  		background: black;
+  	}
+
+  	#wrap div:nth-child(3)
+  	{
+
+  		background: #2263DCFF;
+  	}
+
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div></div><div></div><div></div>
+
+</div>
+<!-- justify-content : 다양한 형태의 배치가 목적
+                    (꼬치 막대의 시작점을 시작으로 다양한 형태로 배치하는것)
+      option -> flex-start(자식box가 다 배치되면 뒤에공간남음)
+                flex-end(자식box가 다 배치되면 앞에 공간남음)
+                center(막대의 가운데로 배치됨.공간 남으면 앞뒤로 남음)
+                space-between(공간이 남는경우 막대 양쪽끝이 딱 맞춰 box 맞춰지고 중간에 공간남음)
+                space-around(모든 자식box가 좌우에 공간이 남는경우 모두 좌우공간이 있게됨)
+-->
+</body>
+</html>

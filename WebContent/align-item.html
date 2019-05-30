@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+<style>
+	*{margin:0;padding:0;}
+	#wrap
+  	{
+  		display: flex;
+  		width:90%;
+			height:300px;
+		  border:3px solid #005d80FF;
+		  margin:10% auto;
+      justify-content: center;
+			/* 주축을 배치하게 해줌 */
+			align-items: center;
+			/*align-items : stretch,flex-start,flex-end,center,space-between,space-around;*/
+			/* 교차축을 배치하게해줌 */
+			background: #dbee2c;
+      /* 좌우가운데 */
+      /* justify-content : flex-start,flex-end,center,space-between,space-around; */
+  	}
+
+  	#wrap div
+  	{
+      width:80%;
+		  height:200px;
+  	}
+
+  	#wrap div:nth-child(1)
+  	{
+		background: #E65318FF;
+  	}
+
+  	#wrap div:nth-child(2)
+  	{
+  		background: black;
+  	}
+
+  	#wrap div:nth-child(3)
+  	{
+  		background: #2263DCFF;
+  	}
+
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div></div><div></div><div></div>
+</div>
+<!--
+align-content 은 flex box의 주 막대가 아닌 교차막대방향으로 다양한 배치를 하게 해줌
+							: stretch(기본값)(평상시 상하가 안차있다면 상하를 확장하여 꽉차게 만듦)
+								flex-start(배치의 기준점이 상하일때 상이 기준점이 되고 공간이 남으면 아래가 비게됨)
+								flex-end(배치의 기준점이 상하일때 하가 기준점이 되고 공간이 남으면 위가 비게됨)
+								center(상하 중간으로 배치되고 공간남으면 상하에 나뉘어 빔)
+								space-between(상하는 붙고 공간남으면 사이사이에 빔)
+								space-around(공간 남으면 flex-item상하 각각에 빈 공간 생김)
+
+-->
+</body>
+</html>
