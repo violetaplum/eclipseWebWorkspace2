@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+  <title>Mockup</title>
+  <style>
+    *
+    {
+      margin:0;padding:0;
+    }
+  #wrap
+  {
+    display: flex;
+    /* 가로로 여러줄 배치하기 */
+    flex-flow:row wrap;
+    width:90%;
+    margin:0 auto;
+    /* 박스 가운데정렬을 위해 */
+  }
+  .header
+  {
+    /* justify-content,align-content,flex-end로 메뉴를 옆으로 삭 밀어줘야함 */
+    justify-content:flex-end;
+    /* align-content:flex-end 하면 밑으로 내려가게 할수있음 */
+    display: flex;
+    order: 1;
+    position: relative;
+    /* 상대적 위치 */
+    width: 100%;
+  }
+  .header h1
+  {
+/* 제목 */
+    position: absolute;
+    /* 위치가 맨 좌측끝에 나오게됨 */
+    top:0;
+    left:0;
+    width:12.5%;
+    /* 제목옆에 메뉴오게 영역 만들어준것 */
+    /* 제목(로고):12.5% , 메뉴:87.5% */
+    height:142px;
+    background: #2f31f1;
+  }
+  .header nav
+  {
+
+    /* menu영역 */
+    /* 제목의 absolute에 때문에 제목이 nav위로 올라가 nav가 안보임 */
+    width:87.5%;
+    min-height:80px;
+    background: #a1f12f;
+  }
+  .slider_section
+  {
+    order:2;
+    width:50%;
+    background: #576ee9;
+    text-align:center;
+  }
+  .gallery_section
+  {
+    order:3;
+    width:25%;
+    height:440px;
+    background: #96a0d2;
+  }
+  .rankup_section
+  {
+    order:4;
+    width:25%;
+    background: #083304;
+  }
+
+
+  .latest_post_section
+  {
+    order:5;
+    /* order는 5 6 7 8 w는 30%씩으로 2개, 22.9,17.0 하나씩 */
+    width:30%;
+    background: #f7f534;
+
+  }
+  .popular_post_section
+  {
+    order:6;
+    width:30%;
+    background: #f41bd1;
+
+  }
+  .banner_section
+  {
+    display:flex;
+    order:7;
+    flex-flow:column nowrap;
+    /* 배너가 세로로 배치 및 한줄로 배치되도록 */
+    width:20%;
+  }
+  .banner_section div
+  {
+    flex:1 1 0;
+    /* 배너의 박스높이가 각각 반씩 차지하도록 */
+  }
+  .banner_section div:nth-child(1)
+  {
+    background: #fe5314;
+     /* 배경색으로 배너박스 구분 */
+  }
+  .banner_section div:nth-child(2)
+  {
+    background: #e673f0;
+  }
+  .social_section
+  {
+    order:8;
+    width:20%;
+    height: 270px;
+    /* 이걸 안하면 세로높이가 상대적으로 너무 짧아보임 */
+    background: #cf2b4c;
+  }
+  .footer
+  {
+    order:9;
+    width:100%;
+    height:94px;
+    background: #6c0000;
+    color:white;
+  }
+  </style>
+  </head>
+
+<body>
+  <div id="wrap">
+    <header class="header">
+      <h1>로고</h1>
+      <nav>메뉴영역</nav>
+      <!-- 내부 -->
+      </header>
+
+      <section class="slider_section">
+        슬라이더영역
+        </section>
+    <section class="gallery_section">
+          갤러리영역
+          </section>
+
+          <section class="rankup_section">
+            인기검색어영역
+            </section>
+
+            <section class="latest_post_section">
+              최근글영역
+              </section>
+
+              <section class="popular_post_section">
+                인기글영역
+                </section>
+
+                <section class="banner_section">
+                  <div class="banner_box_01">
+                    배너1
+                    </div>
+                    <div class="banner_box_02">
+                      배너2
+                      </div>
+                  </section>
+
+                  <section class="social_section">
+                    소셜네트워크영역
+                    </section>
+
+                    <footer class="footer"></footer>
+    </div>
+  </body>
+</html>

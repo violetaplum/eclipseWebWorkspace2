@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+<style>
+	*{margin:0;padding:0;}
+	#wrap
+  	{
+  		display: flex;
+  		width:90%;
+			height:800px;
+      margin:0 auto;
+		  border:3px solid #005d80FF;
+			background: #010a44;
+      flex-flow: row;
+    }
+
+  	#wrap div
+  	{
+      width:33.333%;
+		  height:100%;
+      color:#cd1717;
+
+  	}
+
+  	#wrap div:nth-child(1)
+  	{
+      order: 3;
+    /* align-self: flex-end; */
+    flex:1 1 auto;
+    /* 이것은 전체 박스를 채워주는것이 목적 */
+		background: #E65318FF;
+  	}
+
+  	#wrap div:nth-child(2)
+  	{
+      order:1;
+      /* align-self: center; */
+      flex:1 1 auto;
+  		background: #0e600c;
+      width:500px;
+      /* 고정길이 */
+      height:300px;
+      /* 고정길이 */
+      /* flex-basis:0이라면 고정길이를 주어도 가변길이 현상이 발생한다 */
+  	}
+
+  	#wrap div:nth-child(3)
+  	{
+      flex:2 2 auto;
+      order:2;
+/*  order:숫자  -->  div내의 순서를 정해준다*/
+  		background: #2263DCFF;
+  	}
+
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div>나야</div><div>누구?</div><div>아하~~</div>
+</div>
+<!--
+flex-basis 에 0을 주고 어느 한 item에 고정길이를 주면 width는 가변이됨
+하지만 flex-basis에 auto를 주면 고정됨
+ -->
+</body>
+</html>

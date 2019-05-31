@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport"
+  content="width=device-width,initial-scale=1, minumum-scale=1,maximum-scale=no">
+
+<style>
+	*{margin:0;padding:0;}
+	#wrap
+  	{
+  		display: flex;
+  		width:90%;
+			height:300px;
+      margin:0 auto;
+		  border:3px solid #005d80FF;
+			background: #dbee2c;
+      flex-flow: row;
+      align-items:center;
+    }
+
+  	#wrap div
+  	{
+      width:33.333%;
+		  height:100%;
+      color:#cd1717;
+
+  	}
+
+  	#wrap div:nth-child(1)
+  	{
+      order: 3;
+    /* align-self: flex-end; */
+    flex:1 1 0;
+    /* 이것은 전체 박스를 채워주는것이 목적 */
+		background: #E65318FF;
+  	}
+
+  	#wrap div:nth-child(2)
+  	{
+      order:1;
+      /* align-self: center; */
+      flex:1 1 0;
+  		background: #0e600c;
+  	}
+
+  	#wrap div:nth-child(3)
+  	{
+      flex:2 2 0;
+      order:2;
+/*  order:숫자  -->  div내의 순서를 정해준다*/
+  		background: #2263DCFF;
+  	}
+
+</style>
+</head>
+<body>
+<div id="wrap">
+	<div>나야</div><div>누구?</div><div>아하~~</div>
+</div>
+<!--
+flex-item flex의 크기를 늘이거나 줄여서 부모에 맞출수가 있다. 가변길이 가능
+flex:2 2 0;
+flex: flex-grow값(자라나는값) flex-shink값(줄어드는값) flex-basis값
+
+맨앞에 grow 가 1 1 2 일때 -> 남는 공간을 1/(1+1+2) 1/(1+1+2) 2/(1+1+2) 으로 재배치
+                            기본크기에 더해준다
+
+shrink가 1 1 2 일때 -> 남는 공간을 1/(1+1+2) 1/(1+1+2) 2/(1+1+2) 으로 만들어서
+                            기본크기에 빼준다
+basis -> 기본크기
+
+만약 child가 3개 있을때
+flex:1 1 0
+flex:1 1 0
+flex:2 2 0
+이렇게 정해주면 row, shrink, basis 값이 각각 1 1 2 , 1 1 2 , 0 0 0으로 정해진다
+
+ -->
+</body>
+</html>
